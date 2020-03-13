@@ -149,8 +149,6 @@
           if($('#m').val() != ''){
             socket.emit('chat message', $('#m').val());
             $('#m').val('');
-            $('#m').focus();							
-            $('#m').setSelectionRange($('#m'), 1, 2);	
           return false;
           }
         };
